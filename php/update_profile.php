@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($stmt->execute()) {
-        header('location: profile.php');
+        header('location: ./profile.php');
         echo "Profile updated successfully.";
     } else {
         echo "Error updating profile: " . $conn->error;

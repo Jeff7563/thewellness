@@ -48,7 +48,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The wellness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styleprofile.css">
+    <link rel="stylesheet" href="../css/styleprofile.css">
 </head>
 <body>
 <header>
@@ -70,8 +70,8 @@ $conn->close();
                         <div class="role">
                         <a href="#" class="active">User : <?php echo htmlspecialchars($username); ?></a>
                         </div>
-                        <a href="profile.php">Edit Profile</a>
-                        <a href="../login.html">Logout</a>
+                        <a href="./profile.php">Edit Profile</a>
+                        <a href="../html/login.html">Logout</a>
                     </div>
                 </div>
             </div>
@@ -139,4 +139,5 @@ $conn->close();
         </div>
         <input type="submit" value="Update Profile" >
     </form>
+    
 </div>

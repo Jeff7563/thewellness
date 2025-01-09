@@ -16,7 +16,7 @@
     
     if ($callback_sql) {
         echo "Registration successful!";
-        header('location: login.html');
+        header('location: ../html/login.html');
     } else {
         echo "Error: " . $callback_sql->error;
     }

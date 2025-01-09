@@ -1,6 +1,8 @@
 <?php
     session_start();
     include('server.php');
+
+    $errors = array();
     
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST['email'];
@@ -17,7 +19,11 @@
             echo "Login successful!";
             header('location: ./index.php');
         } else {
-            echo "Invalid username or password."; // pop up หน้่า login นะจ้ะะ
+            echo "<SCript>
+                    alert('Invalid username or password.');
+                    window.location.href = '../html/login.html';
+                </SCript>";
+                
         }
     
         $stmt->close();
