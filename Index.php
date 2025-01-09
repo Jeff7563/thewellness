@@ -182,6 +182,7 @@ $conn->close();
     <img src="images/pay.png" alt="" width="50%" >
     <div class="footer-bottom">
       <p>&copy; 2025 บริษัทThe wellness Golden Time. สงวนลิขสิทธิ์.</p>
+      <p>Test</p>
   </div>
   </div>
 </div>
