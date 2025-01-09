@@ -71,7 +71,7 @@ $conn->close();
                         <a href="#" class="active">User : <?php echo htmlspecialchars($username); ?></a>
                         </div>
                         <a href="profile.php">Edit Profile</a>
-                        <a href="login.html">Logout</a>
+                        <a href="../login.html">Logout</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@ $conn->close();
 <!-- Profile Form -->
 <div class="container">
     <h1>User Profile</h1>
-    <form action="update_profile.php" method="POST">
+    <form action="./update_profile.php" method="POST">
         <div class="form-group">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" value="<?php echo htmlspecialchars($email); ?>" readonly>

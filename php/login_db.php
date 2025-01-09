@@ -17,7 +17,7 @@
             echo "Login successful!";
             header('location: ./index.php');
         } else {
-            echo "Invalid username or password.";
+            echo "Invalid username or password."; // pop up หน้่า login นะจ้ะะ
         }
     
         $stmt->close();
