@@ -70,20 +70,20 @@ $conn->close();
   <div class="card-container">
       <!-- การ์ดกิจกรรม -->
       <div class="card">
-          <img src="../images/แอโรบิค.jpg" alt="รูปกิจกรรม">
+          <img src="../images/เพ้นท์แก้ว.jpg" alt="รูปกิจกรรม">
           <div class="card-content">
               <!-- ข้อมูลกิจกรรม -->
               <div class="info-row">
                   <i class="fa fa-calendar"></i>
-                  <span>วันที่: 29 ต.ค. 2567</span>
+                  <span>วันที่: 01 พ.ย. 2567</span>
               </div>
               <div class="info-row">
                   <i class="fa fa-clock"></i>
-                  <span>เวลา: 16:00 - 17:00 น.</span>
+                  <span>เวลา: 13:00 - 15:00 น.</span>
               </div>
               <div class="info-row">
                   <i class="fa fa-dollar-sign"></i>
-                  <span>ราคา: ฟรี</span>
+                  <span>ราคา: 109 บาท</span>
               </div>
               <div class="info-row">
                   <i class="fa fa-user"></i>
@@ -101,7 +101,7 @@ $conn->close();
               <!-- ข้อมูลรายละเอียดกิจกรรม -->
               <div class="activity-details">
                   <i class="fa fa-info-circle"></i>
-                  รายละเอียด:มาขยับร่างกาย เพิ่มพลัง และสร้างสุขภาพดีไปด้วยกันกับคลาสเต้นแอโรบิกสุดสนุก! คลาสนี้ออกแบบมาโดยเฉพาะสำหรับผู้สูงอายุ โดยใช้ท่าทางง่ายๆ ที่ปลอดภัย แต่ช่วยเผาผลาญพลังงานและเสริมสร้างความแข็งแรงของร่างกาย
+                  รายละเอียด: กิจกรรมส่งเสริมสุขภาพที่เหมาะสำหรับผู้สูงอายุ เช่น โยคะและกิจกรรมสร้างสมดุล.
               </div>
               <!-- ปุ่มลงทะเบียน -->
               <a href="#" class="register-button">ลงทะเบียนเข้าร่วม</a>

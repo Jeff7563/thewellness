@@ -70,20 +70,20 @@ $conn->close();
   <div class="card-container">
       <!-- การ์ดกิจกรรม -->
       <div class="card">
-          <img src="../images/แอโรบิค.jpg" alt="รูปกิจกรรม">
+          <img src="../images/สอนใช้แมพ.jpg" alt="รูปกิจกรรม">
           <div class="card-content">
               <!-- ข้อมูลกิจกรรม -->
               <div class="info-row">
                   <i class="fa fa-calendar"></i>
-                  <span>วันที่: 29 ต.ค. 2567</span>
+                  <span>วันที่: 21 พ.ย. 2567</span>
               </div>
               <div class="info-row">
                   <i class="fa fa-clock"></i>
-                  <span>เวลา: 16:00 - 17:00 น.</span>
+                  <span>เวลา: 10:00 - 12:00 น.</span>
               </div>
               <div class="info-row">
                   <i class="fa fa-dollar-sign"></i>
-                  <span>ราคา: ฟรี</span>
+                  <span>ราคา: ไม่มีค่าใช้จ่าย</span>
               </div>
               <div class="info-row">
                   <i class="fa fa-user"></i>
@@ -101,7 +101,7 @@ $conn->close();
               <!-- ข้อมูลรายละเอียดกิจกรรม -->
               <div class="activity-details">
                   <i class="fa fa-info-circle"></i>
-                  รายละเอียด:มาขยับร่างกาย เพิ่มพลัง และสร้างสุขภาพดีไปด้วยกันกับคลาสเต้นแอโรบิกสุดสนุก! คลาสนี้ออกแบบมาโดยเฉพาะสำหรับผู้สูงอายุ โดยใช้ท่าทางง่ายๆ ที่ปลอดภัย แต่ช่วยเผาผลาญพลังงานและเสริมสร้างความแข็งแรงของร่างกาย
+                  รายละเอียด: เตรียมตัวออกเดินทางกับกิจกรรมที่ช่วยให้การวางแผนท่องเที่ยวกลายเป็นเรื่องง่าย! ในกิจกรรมนี้ ผู้สูงอายุจะได้เรียนรู้การใช้งาน Google Maps ตั้งแต่พื้นฐานจนถึงขั้นวางแผนทริปท่องเที่ยวของตนเองอย่างมืออาชีพ
               </div>
               <!-- ปุ่มลงทะเบียน -->
               <a href="#" class="register-button">ลงทะเบียนเข้าร่วม</a>

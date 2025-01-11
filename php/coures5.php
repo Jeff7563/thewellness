@@ -70,20 +70,20 @@ $conn->close();
   <div class="card-container">
       <!-- การ์ดกิจกรรม -->
       <div class="card">
-          <img src="../images/แอโรบิค.jpg" alt="รูปกิจกรรม">
+          <img src="../images/ช้อปปิ้ง.jpg" alt="รูปกิจกรรม">
           <div class="card-content">
               <!-- ข้อมูลกิจกรรม -->
               <div class="info-row">
                   <i class="fa fa-calendar"></i>
-                  <span>วันที่: 29 ต.ค. 2567</span>
+                  <span>วันที่: 30 ต.ค. 2567</span>
               </div>
               <div class="info-row">
                   <i class="fa fa-clock"></i>
-                  <span>เวลา: 16:00 - 17:00 น.</span>
+                  <span>เวลา: 10:30 - 12:00 น.</span>
               </div>
               <div class="info-row">
                   <i class="fa fa-dollar-sign"></i>
-                  <span>ราคา: ฟรี</span>
+                  <span>ราคา: ไม่มีค่าใช้จ่าย</span>
               </div>
               <div class="info-row">
                   <i class="fa fa-user"></i>
@@ -101,7 +101,7 @@ $conn->close();
               <!-- ข้อมูลรายละเอียดกิจกรรม -->
               <div class="activity-details">
                   <i class="fa fa-info-circle"></i>
-                  รายละเอียด:มาขยับร่างกาย เพิ่มพลัง และสร้างสุขภาพดีไปด้วยกันกับคลาสเต้นแอโรบิกสุดสนุก! คลาสนี้ออกแบบมาโดยเฉพาะสำหรับผู้สูงอายุ โดยใช้ท่าทางง่ายๆ ที่ปลอดภัย แต่ช่วยเผาผลาญพลังงานและเสริมสร้างความแข็งแรงของร่างกาย
+                  รายละเอียด: เปลี่ยนการช็อปปิ้งให้สะดวกสบายยิ่งขึ้น! กิจกรรมนี้ออกแบบมาเพื่อผู้สูงอายุที่ต้องการเรียนรู้วิธีการซื้อสินค้าออนไลน์ผ่านแอป Shopee โดยไม่ต้องกังวลเรื่องความยุ่งยาก
               </div>
               <!-- ปุ่มลงทะเบียน -->
               <a href="#" class="register-button">ลงทะเบียนเข้าร่วม</a>

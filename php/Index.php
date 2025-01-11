@@ -99,10 +99,11 @@ $conn->close();
     </div>
 
     <div class="content">
-      <h2>why choose us?</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem autem ab soluta reiciendis quaerat exercitationem asperiores eveniet, iste sequi accusantium impedit ratione nam cum excepturi, minus voluptatum ut expedita. Corporis!</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, recusandae quae praesentium corporis atque hic minus illum facilis porro eum commodi tenetur velit aperiam ipsum quaerat omnis. Cumque, consequatur delectus?</p>
-      <a href="#" class="btn">learn</a>
+      <h2>ทำไมต้องเลือกเรา ?</h2>
+      <p>เรามีกิจกรรมที่ตอบโจทย์ทุกความสนใจ ไม่ว่าจะเป็นการออกกำลังกาย, กิจกรรมดนตรี, บอร์ดเกม, คลาสเรียนรู้เทคโนโลยี หรือการสร้างสรรค์งานฝีมือ เพื่อให้ผู้สูงอายุได้สนุกและเรียนรู้สิ่งใหม่</p>
+      <p>ศูนย์กิจกรรมของเราเป็นจุดเชื่อมต่อผู้สูงอายุที่มีความสนใจเหมือนกัน ช่วยสร้างมิตรภาพใหม่และความสัมพันธ์ที่ดีในชุมชน</p>
+      <p>เราสร้างสภาพแวดล้อมที่เหมาะสมสำหรับผู้สูงอายุ ด้วยการดูแลอย่างใส่ใจจากทีมงานมืออาชีพ</p>
+      <a href="#course" class="btn">เข้าร่วมกิจกรรม</a>
 
     </div>
   </div>
@@ -114,29 +115,29 @@ $conn->close();
 <section class="course" id="course">
   <h1 class="heading">November <span>course</span></h1>
   <div class="card-container">
-    <div class="card">
+  <div class="card">
         <img src="../images/1.png" alt="Image 1" >
-        <a href="./coures1.php">Caption 1</a>
+        <button><a href="./coures1.php">เต้นแอโรบิค</a></button>
     </div>
     <div class="card">
         <img src="../images/2.png" alt="Image 2">
-        <p>Caption 2</p>
+        <button><a href="./coures2.php">เพ้นท์แก้วเซรามิค</a></button>
     </div>
     <div class="card">
         <img src="../images/3.png" alt="Image 3">
-        <p>Caption 3</p>
+        <button><a href="./coures3.php">บอร์ดเกมรถไฟ</a></button>
     </div>
     <div class="card">
         <img src="../images/5.png" alt="Image 4">
-        <p>Caption 4</p>
+        <button><a href="./coures4.php">จัดทริปง่ายๆ ด้วย google Map</a></button>
     </div>
     <div class="card">
         <img src="../images/6.png" alt="Image 5">
-        <p>Caption 5</p>
+        <button><a href="./coures5.php">สอนช้อปปิ้งออนไลน์ด้วยแอป Shopee</a></button>
     </div>
     <div class="card">
         <img src="../images/7.png" alt="Image 6">
-        <p>Caption 6</p>
+        <button><a href="./coures6.php">คลาสเรียนอูคูเลเล่</a></button>
     </div>
 </div>
 </section>
@@ -150,7 +151,7 @@ $conn->close();
   <form action="">
     <input type="text" placeholder="name" class="box">
     <input type="email" placeholder="email" class="box">
-    <input type="number" placeholder="namber" class="box">
+    <input type="number" placeholder="number" class="box">
     <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
     <input type="submit" value="send message" class="btn" >
   </form>
