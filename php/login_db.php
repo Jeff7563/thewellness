@@ -16,6 +16,7 @@
         $stmt->fetch();
     
         if (password_verify($password, $hashed_password)) {
+            $_SESSION['user_id'] = $user['id'];
             echo "Login successful!";
             header('location: ./index.php');
         } else {
@@ -23,10 +24,7 @@
                     alert('Invalid username or password.');
                     window.location.href = '../html/login.html';
                 </SCript>";
-                
         }
-
-        $_SESSION['user_id'] = $user['id'];
 
         $stmt->close();
         $conn->close();

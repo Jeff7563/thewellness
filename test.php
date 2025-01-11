@@ -1,7 +1,13 @@
-<?php 
+<?php
 session_start();
+if (!isset($_SESSION['user_id'])) {
+    echo "<script>
+            alert('กรุณาเข้าสู่ระบบก่อนลงทะเบียน');
+            window.location.href = './html/login.html';
+        </script>";
+    exit;
+}
 ?>
-
 <div class="course">
     <h3>คอร์ส: เพิ่มพลังสุขภาพ</h3>
     <p>วันที่: 29 ต.ค. 2567</p>
