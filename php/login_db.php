@@ -8,25 +8,24 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
     
-        $sql = "SELECT password FROM users WHERE email = ? ";
+        $sql = "SELECT id, password FROM users WHERE email = ? ";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("s", $email);
         $stmt->execute();
-        $stmt->bind_result($hashed_password);
+        $stmt->bind_result($user_id, $hashed_password);
         $stmt->fetch();
     
         if (password_verify($password, $hashed_password)) {
+            $_SESSION['user_id'] = $user_id;
             echo "Login successful!";
             header('location: ./index.php');
         } else {
-            echo "<SCript>
+            echo "<script>
                     alert('Invalid username or password.');
                     window.location.href = '../html/login.html';
-                </SCript>";
+                </script>";
                 
         }
-
-        $_SESSION['user_id'] = $user['id'];
         
         $stmt->close();
         $conn->close();
