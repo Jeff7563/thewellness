@@ -24,6 +24,17 @@ $stmt->close();
 $conn->close();
 ?>
 
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    echo "<script>
+            alert('กรุณาเข้าสู่ระบบก่อนลงทะเบียน');
+            window.location.href = './html/login.html';
+        </script>";
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

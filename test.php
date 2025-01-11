@@ -7,6 +7,7 @@ if (!isset($_SESSION['user_id'])) {
         </script>";
     exit;
 }
+
 ?>
 <div class="course">
     <h3>คอร์ส: เพิ่มพลังสุขภาพ</h3>

@@ -24,6 +24,17 @@ $stmt->close();
 $conn->close();
 ?>
 
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    echo "<script>
+            alert('กรุณาเข้าสู่ระบบก่อนลงทะเบียน');
+            window.location.href = './html/login.html';
+        </script>";
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,78 +78,81 @@ $conn->close();
 <!-- cost section end  -->
 <body>
 
-  <div class="card-container">
-      <!-- การ์ดกิจกรรม -->
-      <div class="card">
-          <img src="../images/แอโรบิค.jpg" alt="รูปกิจกรรม">
-          <div class="card-content">
-              <!-- ข้อมูลกิจกรรม -->
-              <div class="info-row">
-                  <i class="fa fa-calendar"></i>
-                  <span>วันที่: 29 ต.ค. 2567</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-clock"></i>
-                  <span>เวลา: 16:00 - 17:00 น.</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-dollar-sign"></i>
-                  <span>ราคา: ฟรี</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-user"></i>
-                  <span>จำนวนที่รับ: 20 คน</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-map-marker-alt"></i>
-                  <span>สถานที่:The wellness GT</span>
-              </div>
+<div class="card-container">
+    <!-- การ์ดกิจกรรม -->
+    <div class="card">
+        <img src="../images/แอโรบิค.jpg" alt="รูปกิจกรรม">
+        <div class="card-content">
+            <!-- ข้อมูลกิจกรรม -->
+            <div class="info-row">
+                <i class="fa fa-calendar"></i>
+                <span>วันที่: 29 ต.ค. 2567</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-clock"></i>
+                <span>เวลา: 16:00 - 17:00 น.</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-dollar-sign"></i>
+                <span>ราคา: ฟรี</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-user"></i>
+                <span>จำนวนที่รับ: 20 คน</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-map-marker-alt"></i>
+                <span>สถานที่:The wellness GT</span>
+            </div>
 
-              <!-- เส้นแบ่ง -->
-              <div class="divider"></div>
+            <!-- เส้นแบ่ง -->
+            <div class="divider"></div>
 
             
-              <!-- ข้อมูลรายละเอียดกิจกรรม -->
-              <div class="activity-details">
-                  <i class="fa fa-info-circle"></i>
-                  รายละเอียด:มาขยับร่างกาย เพิ่มพลัง และสร้างสุขภาพดีไปด้วยกันกับคลาสเต้นแอโรบิกสุดสนุก! คลาสนี้ออกแบบมาโดยเฉพาะสำหรับผู้สูงอายุ โดยใช้ท่าทางง่ายๆ ที่ปลอดภัย แต่ช่วยเผาผลาญพลังงานและเสริมสร้างความแข็งแรงของร่างกาย
-              </div>
-              <!-- ปุ่มลงทะเบียน -->
-              <a href="#" class="register-button">ลงทะเบียนเข้าร่วม</a>
-          </div>
-      </div>
-  </div>
+            <!-- ข้อมูลรายละเอียดกิจกรรม -->
+            <div class="activity-details">
+                <i class="fa fa-info-circle"></i>
+                รายละเอียด:มาขยับร่างกาย เพิ่มพลัง และสร้างสุขภาพดีไปด้วยกันกับคลาสเต้นแอโรบิกสุดสนุก! คลาสนี้ออกแบบมาโดยเฉพาะสำหรับผู้สูงอายุ โดยใช้ท่าทางง่ายๆ ที่ปลอดภัย แต่ช่วยเผาผลาญพลังงานและเสริมสร้างความแข็งแรงของร่างกาย
+            </div>
+            <!-- ปุ่มลงทะเบียน -->
+            <form method="POST" action="./register_course.php">
+                <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
+                <input type="hidden" name="course_id" value="1"> <!-- ตัวอย่าง course_id -->
+                <input type="hidden" name="course_name" value="เพิ่มพลังสุขภาพ"> <!-- ตัวอย่าง course_name -->
+                <button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button>
+            </form>
+        </div>
+    </div>
+</div>
 
-  <!-- Font Awesome สำหรับไอคอน -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Font Awesome สำหรับไอคอน -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 <!-- cost section end  -->
 
 
 <!-- footer section strats  -->
- <section class="footer" >
+<section class="footer" >
 <div class="box-container11">
 
-  <div class="box">
+<div class="box">
     <h3>quick links</h3>
-      <a href="Index.html#home" id="home">Home</a>
-      <a href="Index.html#about" id="about">about</a>
-      <a href="Index.html#course" id="course">course</a>
-      <a href="Index.html#concet" id="concet">contact</a>
+    <a href="Index.html#home" id="home">Home</a>
+    <a href="Index.html#about" id="about">about</a>
+    <a href="Index.html#course" id="course">course</a>
+    <a href="Index.html#concet" id="concet">contact</a>
     </div>
 
-  <div class="box">
+<div class="box">
     <h3>contact info</h3>
     <a href="#">+123-456-7890</a>
     <a href="#">exzmple@gmail.com</a>
     <a href="#">Sakon Nakhon</a>
     <img src="images/pay.png" alt="" width="50%" >
     <div class="footer-bottom">
-      <p>&copy; 2025 บริษัทThe wellness Golden Time. สงวนลิขสิทธิ์.</p>
-  </div>
-  </div>
+    <p>&copy; 2025 บริษัทThe wellness Golden Time. สงวนลิขสิทธิ์.</p>
 </div>
-
-<button><a href="../test.php">GO TO TEST</a></button>
+</div>
+</div>
 
 </section>
