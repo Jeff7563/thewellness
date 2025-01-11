@@ -25,7 +25,9 @@
                 </SCript>";
                 
         }
-    
+
+        $_SESSION['user_id'] = $user['id'];
+        
         $stmt->close();
         $conn->close();
     }

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('server.php');
+include('./php/server.php');
 
 // ตรวจสอบว่ามีการส่งข้อมูล POST เข้ามา
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($result_user->num_rows == 0) {
         echo "<script>
                 alert('User ID ไม่ถูกต้องหรือไม่มีในระบบ');
-                window.location.href = './index.php';
+                window.location.href = './php/index.php';
             </script>";
         exit;
     }
@@ -30,12 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($stmt->execute()) {
         echo "<script>
                 alert('ลงทะเบียนสำเร็จ');
-                window.location.href = './index.php';
+                window.location.href = './php/index.php';
             </script>";
     } else {
         echo "<script>
                 alert('เกิดข้อผิดพลาดในการลงทะเบียน');
-                window.location.href = './index.php';
+                window.location.href = './php/index.php';
             </script>";
     }
 
