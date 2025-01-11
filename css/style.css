@@ -253,6 +253,7 @@ header label.fa-bars{
     transform: translateY(-10px);
 }
 
+
 .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -358,14 +359,6 @@ header label.fa-bars{
     .box img{
         margin-top: 1rem;
     }
-    
-
-
-
-
-
-
-
 
 /*media queries*/
 
