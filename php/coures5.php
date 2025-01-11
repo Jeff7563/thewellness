@@ -42,7 +42,6 @@ if (!isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The wellness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../css/stylecoures.css">
 </head>
 <body>
@@ -118,7 +117,7 @@ if (!isset($_SESSION['user_id'])) {
               <form method="POST" action="./register_course.php">
                 <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
                 <input type="hidden" name="course_id" value="1"> <!-- ตัวอย่าง course_id -->
-                <input type="hidden" name="course_name" value="เพิ่มพลังสุขภาพ"> <!-- ตัวอย่าง course_name -->
+                <input type="hidden" name="course_name" value="สอนช้อปปิ้งออนไลน์ด้วยแอป Shopee"> <!-- ตัวอย่าง course_name -->
                 <button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button>
             </form>
           </div>
