@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include('server.php');
+    include('./server.php');
 
     $errors = array();
     
@@ -27,7 +27,7 @@
         }
 
         $_SESSION['user_id'] = $user['id'];
-        
+
         $stmt->close();
         $conn->close();
     }
