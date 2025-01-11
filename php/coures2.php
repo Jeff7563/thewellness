@@ -43,6 +43,7 @@ if (!isset($_SESSION['user_id'])) {
     <title>The wellness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/stylecoures.css">
+
 </head>
 <body>
 <header>
@@ -117,7 +118,7 @@ if (!isset($_SESSION['user_id'])) {
                 <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
                 <input type="hidden" name="course_id" value="1"> <!-- ตัวอย่าง course_id -->
                 <input type="hidden" name="course_name" value="เพ้นท์แก้วเซรามิค"> <!-- ตัวอย่าง course_name -->
-                <button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button>
+                <div class="centerbb"><button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button></div>
             </form>
         </div>
     </div>

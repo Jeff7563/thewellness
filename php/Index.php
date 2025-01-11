@@ -45,7 +45,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The wellness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css_use/style.css">
 </head>
 <body>
   <header>
@@ -117,29 +117,29 @@ $conn->close();
   <div class="card-container">
   <div class="card">
         <img src="../images/1.png" alt="Image 1" >
-        <button><a href="./coures1.php">เต้นแอโรบิค</a></button>
+        <button class="button_coures"><a href="./coures1.php">เต้นแอโรบิค</a></button>
     </div>
     <div class="card">
         <img src="../images/2.png" alt="Image 2">
-        <button><a href="./coures2.php">เพ้นท์แก้วเซรามิค</a></button>
+        <button class="button_coures"><a href="./coures2.php">เพ้นท์แก้วเซรามิค</a></button>
     </div>
     <div class="card">
         <img src="../images/3.png" alt="Image 3">
-        <button><a href="./coures3.php">บอร์ดเกมรถไฟ</a></button>
+        <button class="button_coures"><a href="./coures3.php">บอร์ดเกมรถไฟ</a></button>
     </div>
     <div class="card">
         <img src="../images/5.png" alt="Image 4">
-        <button><a href="./coures4.php">จัดทริปง่ายๆ ด้วย google Map</a></button>
+        <button class="button_coures"><a href="./coures4.php">จัดทริปง่ายๆ ด้วย google Map</a></button>
     </div>
     <div class="card">
         <img src="../images/6.png" alt="Image 5">
-        <button><a href="./coures5.php">สอนช้อปปิ้งออนไลน์ด้วยแอป Shopee</a></button>
+        <button class="button_coures"><a href="./coures5.php">สอนช้อปปิ้งออนไลน์ด้วยแอป Shopee</a></button>
     </div>
     <div class="card">
         <img src="../images/7.png" alt="Image 6">
-        <button><a href="./coures6.php">คลาสเรียนอูคูเลเล่</a></button>
+        <button class="button_coures"><a href="./coures6.php">คลาสเรียนอูคูเลเล่</a></button>
     </div>
-</div>
+  </div>  
 </section>
 <!-- cost section end  -->
 
