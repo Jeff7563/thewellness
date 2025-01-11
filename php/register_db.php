@@ -11,14 +11,20 @@
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
     $activity = $_POST['activity'];
     
-    $sql = "INSERT INTO users VALUES ('','$email', '$username', '$fullname', '$gender', '$age', '$phone', '$password', '$activity', 'Active', 'User', '')";
-    $callback_sql = mysqli_query($conn , $sql);
+    $sql = "INSERT INTO users (id, email, username, fullname, gender, age, phone, password, activity, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("issssisss", $id, $email, $username, $fullname, $gender, $age, $phone, $password, $activity);
     
-    if ($callback_sql) {
-        echo "Registration successful!";
-        header('location: ../html/login.html');
+    if ($stmt->execute()) {
+        echo "<script>
+                alert('สมัครสมาชิกแล้ว!');
+                window.location.href = '../html/login.html';
+            </script>";
     } else {
-        echo "Error: " . $callback_sql->error;
+        echo "<script>
+                alert('เกิดข้อผิดพลาดในการสมัครสมาชิก');
+                window.location.href = '../html/login.html';
+            </script>";
     }
     
     $stmt->close();

@@ -116,7 +116,7 @@ if (!isset($_SESSION['user_id'])) {
               <!-- ปุ่มลงทะเบียน -->
               <form method="POST" action="./register_course.php">
                 <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
-                <input type="hidden" name="course_id" value="1"> <!-- ตัวอย่าง course_id -->
+                <input type="hidden" name="course_id" value="3"> <!-- ตัวอย่าง course_id -->
                 <input type="hidden" name="course_name" value="บอร์ดเกมรถไฟ"> <!-- ตัวอย่าง course_name -->
                 <div class="centerbb"><button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button></div>
             </form>
