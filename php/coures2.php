@@ -78,47 +78,51 @@ if (!isset($_SESSION['user_id'])) {
 <!-- cost section end  -->
 <body>
 
-  <div class="card-container">
-      <!-- การ์ดกิจกรรม -->
-      <div class="card">
-          <img src="../images/เพ้นท์แก้ว.jpg" alt="รูปกิจกรรม">
-          <div class="card-content">
-              <!-- ข้อมูลกิจกรรม -->
-              <div class="info-row">
-                  <i class="fa fa-calendar"></i>
-                  <span>วันที่: 01 พ.ย. 2567</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-clock"></i>
-                  <span>เวลา: 13:00 - 15:00 น.</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-dollar-sign"></i>
-                  <span>ราคา: 109 บาท</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-user"></i>
-                  <span>จำนวนที่รับ: 20 คน</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-map-marker-alt"></i>
-                  <span>สถานที่:The wellness GT</span>
-              </div>
+<div class="card-container">
+    <!-- การ์ดกิจกรรม -->
+    <div class="card">
+        <img src="../images/เพ้นท์แก้ว.jpg" alt="รูปกิจกรรม">
+        <div class="card-content">
+            <!-- ข้อมูลกิจกรรม -->
+            <div class="info-row">
+                <i class="fa fa-calendar"></i>
+                <span>วันที่: 01 พ.ย. 2567</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-clock"></i>
+                <span>เวลา: 13:00 - 15:00 น.</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-dollar-sign"></i>
+                <span>ราคา: 109 บาท</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-user"></i>
+                <span>จำนวนที่รับ: 20 คน</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-map-marker-alt"></i>
+                <span>สถานที่:The wellness GT</span>
+            </div>
 
-              <!-- เส้นแบ่ง -->
-              <div class="divider"></div>
+            <!-- เส้นแบ่ง -->
+            <div class="divider"></div>
 
-            
-              <!-- ข้อมูลรายละเอียดกิจกรรม -->
-              <div class="activity-details">
-                  <i class="fa fa-info-circle"></i>
-                  รายละเอียด: กิจกรรมส่งเสริมสุขภาพที่เหมาะสำหรับผู้สูงอายุ เช่น โยคะและกิจกรรมสร้างสมดุล.
-              </div>
-              <!-- ปุ่มลงทะเบียน -->
-              <a href="#" class="register-button">ลงทะเบียนเข้าร่วม</a>
-          </div>
-      </div>
-  </div>
+            <!-- ข้อมูลรายละเอียดกิจกรรม -->
+            <div class="activity-details">
+                <i class="fa fa-info-circle"></i>
+                รายละเอียด: กิจกรรมส่งเสริมสุขภาพที่เหมาะสำหรับผู้สูงอายุ เช่น โยคะและกิจกรรมสร้างสมดุล.
+            </div>
+            <!-- ปุ่มลงทะเบียน -->
+            <form method="POST" action="./register_course.php">
+                <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
+                <input type="hidden" name="course_id" value="1"> <!-- ตัวอย่าง course_id -->
+                <input type="hidden" name="course_name" value="เพิ่มพลังสุขภาพ"> <!-- ตัวอย่าง course_name -->
+                <button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button>
+            </form>
+        </div>
+    </div>
+</div>
 
   <!-- Font Awesome สำหรับไอคอน -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

@@ -115,7 +115,12 @@ if (!isset($_SESSION['user_id'])) {
                   รายละเอียด: เปลี่ยนการช็อปปิ้งให้สะดวกสบายยิ่งขึ้น! กิจกรรมนี้ออกแบบมาเพื่อผู้สูงอายุที่ต้องการเรียนรู้วิธีการซื้อสินค้าออนไลน์ผ่านแอป Shopee โดยไม่ต้องกังวลเรื่องความยุ่งยาก
               </div>
               <!-- ปุ่มลงทะเบียน -->
-              <a href="#" class="register-button">ลงทะเบียนเข้าร่วม</a>
+              <form method="POST" action="./register_course.php">
+                <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
+                <input type="hidden" name="course_id" value="1"> <!-- ตัวอย่าง course_id -->
+                <input type="hidden" name="course_name" value="เพิ่มพลังสุขภาพ"> <!-- ตัวอย่าง course_name -->
+                <button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button>
+            </form>
           </div>
       </div>
   </div>

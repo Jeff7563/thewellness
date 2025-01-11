@@ -211,21 +211,7 @@ body {
     margin: 15px 0;
 }
 
-.register-button {
-    background-color: #4caf50;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    font-size: 13px;
-}
 
-.register-button:hover {
-    background-color: #45a049;
-}
 
 .activity-details {
     font-size: 14px;

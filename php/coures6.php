@@ -116,7 +116,12 @@ if (!isset($_SESSION['user_id'])) {
                   รายละเอียด: มาเรียนรู้การเล่นอูคูเลเล่เพื่อสร้างความสนุกและเพลิดเพลินในชีวิตประจำวันกันเถอะ! คลาสเรียนนี้ออกแบบมาเพื่อผู้สูงอายุที่สนใจเรียนรู้การเล่นเครื่องดนตรีอูคูเลเล่ ซึ่งเป็นเครื่องดนตรีขนาดเล็กที่เล่นง่าย และสามารถเล่นได้ทุกที่ทุกเวลา
               </div>
               <!-- ปุ่มลงทะเบียน -->
-              <a href="#" class="register-button">ลงทะเบียนเข้าร่วม</a>
+              <form method="POST" action="./register_course.php">
+                <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
+                <input type="hidden" name="course_id" value="1"> <!-- ตัวอย่าง course_id -->
+                <input type="hidden" name="course_name" value="เพิ่มพลังสุขภาพ"> <!-- ตัวอย่าง course_name -->
+                <button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button>
+            </form>
           </div>
       </div>
   </div>
