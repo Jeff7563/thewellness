@@ -6,6 +6,7 @@ include('./php/server.php');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = $_POST['user_id']; // ดึง user_id จากฟอร์ม
     $course_id = $_POST['course_id']; // ดึง course_id จากฟอร์ม
+    $course_name = $_POST['course_name']; // ดึง course_name จากฟอร์ม
 
     // ตรวจสอบว่าผู้ใช้มีอยู่ในระบบ
     $sql_user_check = "SELECT id FROM users WHERE id = ?";
@@ -23,9 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // เพิ่มข้อมูลลงตาราง member
-    $sql = "INSERT INTO member (user_id, course_id, register_date) VALUES (?, ?, NOW())";
+    $sql = "INSERT INTO member (user_id, course_id, course_name, register_date) VALUES (?, ?, ?, NOW())";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ii", $user_id, $course_id);
+    $stmt->bind_param("iis", $user_id, $course_id, $course_name);
 
     if ($stmt->execute()) {
         echo "<script>
@@ -42,4 +43,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->close();
     $conn->close();
 }
-?>

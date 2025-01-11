@@ -31,6 +31,7 @@ CREATE TABLE `member` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `course_id` int(11) NOT NULL,
+  `course_name` VARCHAR(255) NOT NULL,
   `register_date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
@@ -38,8 +39,8 @@ CREATE TABLE `member` (
 -- Dumping data for table `member`
 --
 
-INSERT INTO `member` (`id`, `user_id`, `course_id`, `register_date`) VALUES
-(1, 1, 1, '2025-01-11 09:05:18');
+INSERT INTO `member` (`id`, `user_id`, `course_id`, `course_name`, `register_date`) VALUES
+(1, 1, 1, 'Course 1', '2025-01-11 09:05:18');
 
 -- --------------------------------------------------------
 
