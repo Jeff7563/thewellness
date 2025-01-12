@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -13,7 +15,7 @@ if ($conn->connect_error) {
 }
 
 // Assuming you want to get the username of a specific user, e.g., with id 1
-$userId = 1;
+$userId = $_SESSION['user_id'];
 $sql = "SELECT username FROM users WHERE id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $userId);
@@ -23,6 +25,7 @@ $stmt->fetch();
 $stmt->close();
 $conn->close();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
