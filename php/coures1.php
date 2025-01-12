@@ -84,7 +84,7 @@ if (!isset($_SESSION['user_id'])) {
             <!-- ข้อมูลกิจกรรม -->
             <div class="info-row">
                 <i class="fa fa-calendar"></i>
-                <span>วันที่: 29 ต.ค. 2567</span>
+                <span>วันที่: 01 พ.ย. 2567</span>
             </div>
             <div class="info-row">
                 <i class="fa fa-clock"></i>
