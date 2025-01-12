@@ -77,55 +77,55 @@ if (!isset($_SESSION['user_id'])) {
 <!-- cost section end  -->
 <body>
 
-  <div class="card-container">
-      <!-- การ์ดกิจกรรม -->
-      <div class="card">
-          <img src="../images/บอร์ดเกม.jpg" alt="รูปกิจกรรม">
-          <div class="card-content">
-              <!-- ข้อมูลกิจกรรม -->
-              <div class="info-row">
-                  <i class="fa fa-calendar"></i>
-                  <span>วันที่: 02 พ.ย. 2567</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-clock"></i>
-                  <span>เวลา: 14:00 - 15:00 น.</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-dollar-sign"></i>
-                  <span>ราคา: ไม่มีค่าใช้จ่าย</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-user"></i>
-                  <span>จำนวนที่รับ: 20 คน</span>
-              </div>
-              <div class="info-row">
-                  <i class="fa fa-map-marker-alt"></i>
-                  <span>สถานที่:The wellness GT</span>
-              </div>
+<div class="card-container">
+    <!-- การ์ดกิจกรรม -->
+    <div class="card">
+        <img src="../images/บอร์ดเกม.jpg" alt="รูปกิจกรรม">
+        <div class="card-content">
+            <!-- ข้อมูลกิจกรรม -->
+            <div class="info-row">
+                <i class="fa fa-calendar"></i>
+                <span>วันที่: 02 พ.ย. 2567</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-clock"></i>
+                <span>เวลา: 14:00 - 15:00 น.</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-dollar-sign"></i>
+                <span>ราคา: ไม่มีค่าใช้จ่าย</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-user"></i>
+                <span>จำนวนที่รับ: 20 คน</span>
+            </div>
+            <div class="info-row">
+                <i class="fa fa-map-marker-alt"></i>
+                <span>สถานที่:The wellness GT</span>
+            </div>
 
-              <!-- เส้นแบ่ง -->
-              <div class="divider"></div>
+            <!-- เส้นแบ่ง -->
+            <div class="divider"></div>
 
             
-              <!-- ข้อมูลรายละเอียดกิจกรรม -->
-              <div class="activity-details">
-                  <i class="fa fa-info-circle"></i>
-                  รายละเอียด: ร่วมผจญภัยไปกับบอร์ดเกมสุดคลาสสิกที่จำลองการสร้างเส้นทางรถไฟ พร้อมพัฒนาทักษะวางแผนและสร้างมิตรภาพใหม่ๆ! กิจกรรมนี้ออกแบบมาเพื่อผู้สูงอายุโดยเฉพาะ เน้นการเล่นแบบสนุกสนานและช่วยกระตุ้นสมอง โดยผู้เล่นจะต้องวางแผนสร้างเส้นทางรถไฟให้เชื่อมโยงเมืองต่างๆ เพื่อสะสมคะแนนและคว้าชัยชนะ
-              </div>
-              <!-- ปุ่มลงทะเบียน -->
-              <form method="POST" action="./register_course.php">
+            <!-- ข้อมูลรายละเอียดกิจกรรม -->
+            <div class="activity-details">
+                <i class="fa fa-info-circle"></i>
+                รายละเอียด: ร่วมผจญภัยไปกับบอร์ดเกมสุดคลาสสิกที่จำลองการสร้างเส้นทางรถไฟ พร้อมพัฒนาทักษะวางแผนและสร้างมิตรภาพใหม่ๆ! กิจกรรมนี้ออกแบบมาเพื่อผู้สูงอายุโดยเฉพาะ เน้นการเล่นแบบสนุกสนานและช่วยกระตุ้นสมอง โดยผู้เล่นจะต้องวางแผนสร้างเส้นทางรถไฟให้เชื่อมโยงเมืองต่างๆ เพื่อสะสมคะแนนและคว้าชัยชนะ
+            </div>
+            <!-- ปุ่มลงทะเบียน -->
+            <form method="POST" action="./register_course.php">
                 <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
                 <input type="hidden" name="course_id" value="3"> <!-- ตัวอย่าง course_id -->
                 <input type="hidden" name="course_name" value="บอร์ดเกมรถไฟ"> <!-- ตัวอย่าง course_name -->
                 <div class="centerbb"><button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button></div>
             </form>
-          </div>
-      </div>
-  </div>
+        </div>
+    </div>
+</div>
 
-  <!-- Font Awesome สำหรับไอคอน -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Font Awesome สำหรับไอคอน -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 <!-- cost section end  -->
 

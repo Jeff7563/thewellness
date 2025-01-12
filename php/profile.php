@@ -137,10 +137,6 @@ $conn->close();
                 <input type="hidden" name="id" value="<?php echo $userId; ?>">
             </select>
         </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" value="<?php echo htmlspecialchars($password); ?>">
-        </div>
         <input type="submit" value="Update Profile" >
     </form>
     
