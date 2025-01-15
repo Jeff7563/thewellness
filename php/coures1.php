@@ -167,4 +167,3 @@ if (!isset($_SESSION['user_id'])) {
 </div>
 </div>
 
-<h1>test</h1>
