@@ -24,44 +24,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // รับข้อมูลผู้ใช้และคอร์ส
-    $userId = $_SESSION['user_id']; // ตัวอย่าง user_id ที่ลงทะเบียน
+    $user_id = $_SESSION['user_id']; // ดึงค่า user_id จาก session
     $course_id = rand(1000, 9999); // สุ่ม course_id
-    $course_name = "Yoga Basics"; // ชื่อคอร์สที่เลือก
-    $register_date = date('Y-m-d H:i:s'); // เวลาลงทะเบียนปัจจุบัน
-    $make_payment = 0; // ยังไม่ชำระเงิน
+    $course_name = isset($_SESSION['course_name']) ? $_SESSION['course_name'] : 'ERROR'; // ดึงค่า course_name จาก session หรือกำหนดค่าเริ่มต้น
+    $register_date = date('Y-m-d H:i:s'); // เวลาเวลาที่ลงทะเบียนปัจจุบัน
+    $make_payment = 0; // ค่าเริ่มต้นสำหรับ make_payment
 
-    // เพิ่มข้อมูลในตาราง courses หากยังไม่มีคอร์สนี้
+    // ตรวจสอบว่ามีคอร์สอยู่ในตาราง courses หรือไม่
     $checkCourse = $conn->prepare("SELECT course_id FROM courses WHERE course_id = ?");
     $checkCourse->bind_param("i", $course_id);
     $checkCourse->execute();
     $result = $checkCourse->get_result();
 
     if ($result->num_rows === 0) {
-        // เพิ่มข้อมูลคอร์สใหม่
-        $insertCourse = $conn->prepare("INSERT INTO courses (course_id, course_name, date_of_activity ,regis_date) VALUES (?, ?, ?, NOW())");
-        $activity_date = date('Y-m-d', strtotime('+7 days')); // วันที่กิจกรรมในอนาคต (ตัวอย่าง: อีก 7 วัน)
+        // เพิ่มข้อมูลคอร์สใหม่ในตาราง courses
+        $insertCourse = $conn->prepare("INSERT INTO courses (course_id, course_name, date_of_activity, regis_date) VALUES (?, ?, ?, NOW())");
+        $activity_date = date('Y-m-d'); // วันที่กิจกรรมในอนาคต (ตัวอย่าง: อีก 7 วัน)
         $insertCourse->bind_param("iss", $course_id, $course_name, $activity_date);
         $insertCourse->execute();
     }
 
-    // เพิ่มข้อมูลในตาราง registration
+    // เพิ่มข้อมูลลงในตาราง registration
     $insertRegis = $conn->prepare("INSERT INTO registration (user_id, course_id, course_name, register_date, make_payment) VALUES (?, ?, ?, NOW(), ?)");
     $insertRegis->bind_param("iisi", $user_id, $course_id, $course_name, $make_payment);
 
     if ($insertRegis->execute()) {
         echo "<script>
-                alert('ลงทะเบียนสำเร็จ');
-                window.location.href = './index.php';
-            </script>";
+            alert('ลงทะเบียนสำเร็จ!');
+            window.location.href = './index.php';
+        </script>";
     } else {
         echo "<script>
-                alert('เกิดข้อผิดพลาดในการลงทะเบียน');
-                window.location.href = './index.php';
-            </script>";
+            alert('เกิดข้อผิดพลาดในการลงทะเบียน');
+            window.location.href = './index.php';
+        </script>";
     }
 
-    // ปิดการเชื่อมต่อฐานข้อมูล
-    $stmt->close();
+    // ปิดการเชื่อมต่อ
+    $checkCourse->close();
+    $insertCourse->close();
+    $insertRegis->close();
     $conn->close();
 }
 
