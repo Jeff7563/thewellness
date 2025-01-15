@@ -27,7 +27,7 @@ $conn->close();
 if (!isset($_SESSION['user_id'])) {
     echo "<script>
             alert('กรุณาเข้าสู่ระบบก่อนลงทะเบียน');
-            window.location.href = './html/login.html';
+            window.location.href = '../html/login.html';
         </script>";
     exit;
 }
@@ -113,11 +113,22 @@ if (!isset($_SESSION['user_id'])) {
                   รายละเอียด: มาเรียนรู้การเล่นอูคูเลเล่เพื่อสร้างความสนุกและเพลิดเพลินในชีวิตประจำวันกันเถอะ! คลาสเรียนนี้ออกแบบมาเพื่อผู้สูงอายุที่สนใจเรียนรู้การเล่นเครื่องดนตรีอูคูเลเล่ ซึ่งเป็นเครื่องดนตรีขนาดเล็กที่เล่นง่าย และสามารถเล่นได้ทุกที่ทุกเวลา
               </div>
               <!-- ปุ่มลงทะเบียน -->
-              <form method="POST" action="./register_course.php">
+              <form method="POST" action="./sql_registration&courses.php">
                 <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
-                <input type="hidden" name="course_id" value="6"> <!-- ตัวอย่าง course_id -->
-                <input type="hidden" name="course_name" value="คลาสเรียนอูคูเลเล่"> <!-- ตัวอย่าง course_name -->
-                <div class="centerbb"><button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button></div>
+                <input type="hidden" name="course_id" value="1"> <!-- ตัวอย่าง course_id -->
+                <input type="hidden" name="course_name" value="<?php echo isset($_SESSION['course_name']) ? $_SESSION['course_name'] : 'คลาสเรียนอูคูเลเล่'; ?>">
+                <div class="centerbb">
+                    <button type="submit" class="register-button">ลงทะเบียน</button>
+                </div>
+                <?php
+                    // ลบข้อมูล session 'course_name' ก่อนที่จะกำหนดค่าใหม่
+                    unset($_SESSION['course_name']);
+
+                    // ตั้งค่าจากยังไม่มีค่า
+                    if (!isset($_SESSION['course_name'])) {
+                        $_SESSION['course_name'] = 'คลาสเรียนอูคูเลเล่'; // กำหนดค่าเริ่มต้น
+                    }
+                ?>
             </form>
           </div>
       </div>

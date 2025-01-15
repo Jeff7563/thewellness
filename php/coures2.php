@@ -114,11 +114,22 @@ if (!isset($_SESSION['user_id'])) {
                 รายละเอียด: กิจกรรมส่งเสริมสุขภาพที่เหมาะสำหรับผู้สูงอายุ เช่น โยคะและกิจกรรมสร้างสมดุล.
             </div>
             <!-- ปุ่มลงทะเบียน -->
-            <form method="POST" action="./register_course.php">
+            <form method="POST" action="./sql_registration&courses.php">
                 <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
-                <input type="hidden" name="course_id" value="2"> <!-- ตัวอย่าง course_id -->
-                <input type="hidden" name="course_name" value="เพ้นท์แก้วเซรามิค"> <!-- ตัวอย่าง course_name -->
-                <div class="centerbb"><button type="submit" class="register-button">ลงทะเบียนเข้าร่วม</button></div>
+                <input type="hidden" name="course_id" value="1"> <!-- ตัวอย่าง course_id -->
+                <input type="hidden" name="course_name" value="<?php echo isset($_SESSION['course_name']) ? $_SESSION['course_name'] : 'เพ้นท์แก้วเซรามิค'; ?>">
+                <div class="centerbb">
+                    <button type="submit" class="register-button">ลงทะเบียน</button>
+                </div>
+                <?php
+                    // ลบข้อมูล session 'course_name' ก่อนที่จะกำหนดค่าใหม่
+                    unset($_SESSION['course_name']);
+
+                    // ตั้งค่าจากยังไม่มีค่า
+                    if (!isset($_SESSION['course_name'])) {
+                        $_SESSION['course_name'] = 'เพ้นท์แก้วเซรามิค'; // กำหนดค่าเริ่มต้น
+                    }
+                ?>
             </form>
         </div>
     </div>
