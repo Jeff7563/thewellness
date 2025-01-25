@@ -6,11 +6,39 @@
   <title>Photo Album</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../css_use/styleactivity.css">
+  <link rel="stylesheet" href="../css_use/style.css">
 </head>
 <body>
   <header>
-    <h1>กิจกรรมของเรา</h1>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="#" class="Logo">wellness<span>.</span></a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">about</a>
+        <a href="#course">course</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <div class="navbar">
+            <div class="nav-right">
+                <!-- Profile Dropdown -->
+                <div class="profile-dropdown">
+                    <div class="fa-regular fa-user"></div>
+                    <div class="profile-dropdown-content">
+                        <div class="role">
+                        <a href="#" class="active">User : <?php echo htmlspecialchars($username); ?></a>
+                        </div>
+                        <a href="./profile.php">Edit Profile</a>
+                        <a href="../html/login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
   </header>
+  <div>
+  <h1>กิจกรรมคลาสเรียนอูคูเลเล่</h1>
+</div>
+
   <div class="albums">
     <a href="album1.html" class="album">
       <img src="album1.jpg" alt="Album 1">

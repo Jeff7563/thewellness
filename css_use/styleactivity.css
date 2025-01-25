@@ -1,19 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    padding: 10rem;
     background-color: #f9f9f9;
     color: #333;
   }
   
-  header {
+  h1 {
+    padding-top: 10rem;
     text-align: center;
     padding: 20px;
-    background-color: #ff6b6b;
+    background-color: #66CC99;
     color: white;
   }
   
   .albums {
+    padding-top: 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
