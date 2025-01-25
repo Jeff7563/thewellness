@@ -1,3 +1,38 @@
+<?php
+session_start();
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "thewellness";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Assuming you want to get the username of a specific user, e.g., with id 1
+$userId = $_SESSION['user_id'];
+$sql = "SELECT username FROM users WHERE id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $userId);
+$stmt->execute();
+$stmt->bind_result($username);
+$stmt->fetch();
+$stmt->close();
+$conn->close();
+
+if (!isset($_SESSION['user_id'])) {
+    echo "<script>
+            alert('กรุณาเข้าสู่ระบบก่อนลงทะเบียน');
+            window.location.href = '../html/login.html';
+        </script>";
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +73,9 @@
   </header>
 <!-- header section end -->
 <body>
-  <h1 class="heading">activity </h1>
+  <div >
+    <h1>กิจกรรมบอร์ดเกมรถไฟ</h1> 
+  </div>
 
   <div class="photo-grid">
     <img src="/images/บอร์ดเกม1.jpg" alt="Photo 1">
