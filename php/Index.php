@@ -59,6 +59,7 @@ $conn->close();
         <a href="#home">Home</a>
         <a href="#about">about</a>
         <a href="#course">course</a>
+        <a href="#activity">activity</a>
         <a href="#contact">contact</a>
     </nav>
     <div class="navbar">
@@ -144,7 +145,30 @@ $conn->close();
     </div>
   </div>  
 </section>
-<!-- cost section end  -->
+<!-- coures section end  -->
+
+<!-- activity section strats  -->
+<section class="activity" id="activity">
+<h1 class="heading">activity <span>us</span></h1>
+<div class="albums">
+    <a href="album1.html" class="album">
+      <img src="/images/บอร์ดเกม11.jpg" alt="Album 1">
+      <h3>กิจกรรมบอร์ดเกมรถไฟ</h3>
+    </a>
+    <a href="album2.html" class="album">
+      <img src="/images/ปกอูคูเลเล่.jpg" alt="Album 2">
+      <h3>กิจกรรมคลาสเรียนอูคูเลเล่</h3>
+    </a>
+    <a href="album3.html" class="album">
+      <img src="/images/ปกเพ้นแก้ว.jpg" alt="Album 3">
+      <h3>กิจกรรมเพ้นท์แก้วเซรามิค</h3>
+    </a>
+    <a href="album4.html" class="album">
+      <img src="/images/ปกเต้นแอโรบิค.jpg" alt="Album 4">
+      <h3>เต้นแอโรบิค</h3>
+    </a>
+  </div>
+  </section>
 
 <!-- concet section strats  -->
 <section class="contact" id="contact">

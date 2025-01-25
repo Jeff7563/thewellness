@@ -378,8 +378,45 @@ header label.fa-bars{
     .box img{
         margin-top: 1rem;
     }
+  
+/*สไตล์หน้าActivity */
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .album {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .album img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .album h3 {
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .album:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
 
-/*media queries*/
+    /*media queries*/
 
 @media (max-width:991px){
     html{
@@ -396,6 +433,7 @@ header label.fa-bars{
         background-position: left;
 
     }
+
 }
 @media (max-width:768px){
     header label.fa-bars{
