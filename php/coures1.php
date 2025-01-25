@@ -128,7 +128,7 @@ if (!isset($_SESSION['user_id'])) {
 
                     // ตั้งค่าจากยังไม่มีค่า
                     if (!isset($_SESSION['course_name'])) {
-                        $_SESSION['course_name'] = 'เต้นแอโรบิค'; // กำหนดค่าเริ่มต้น
+                        $_SESSION['course_name'] = 'เต้นแอโรบิค'; // กำหนดค่าเริ่มต้น 
                     }
                 ?>
             </form>
