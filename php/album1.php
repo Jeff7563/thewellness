@@ -73,7 +73,7 @@ if (!isset($_SESSION['user_id'])) {
   </header>
 <!-- header section end -->
 <body>
-<h1 class="heading">November <span>course</span></h1>
+<h1 class="heading">กิจกรรมบอร์ดเกมรถไฟ</h1>
   <div class="photo-grid">
     <img src="https://th.bing.com/th/id/OIP.c047FeZcAwR3ptUeYSAynAHaE8?rs=1&pid=ImgDetMain" alt="Photo 1">
     <img src="https://image.bangkokbiznews.com/uploads/images/md/2022/05/ObS7NpK4gBKO1dPFs1p7.webp" alt="Photo 2">
