@@ -73,12 +73,9 @@ if (!isset($_SESSION['user_id'])) {
   </header>
 <!-- header section end -->
 <body>
-  <div >
-    <h1>กิจกรรมบอร์ดเกมรถไฟ</h1> 
-  </div>
-
+<h1 class="heading">November <span>course</span></h1>
   <div class="photo-grid">
-    <img src="https://th.bing.com/th/id/OIP.c047FeZcAwR3ptUeYSAynAHaE8?rs=1&pid=ImgDetMain alt="Photo 1">
+    <img src="https://th.bing.com/th/id/OIP.c047FeZcAwR3ptUeYSAynAHaE8?rs=1&pid=ImgDetMain" alt="Photo 1">
     <img src="https://image.bangkokbiznews.com/uploads/images/md/2022/05/ObS7NpK4gBKO1dPFs1p7.webp" alt="Photo 2">
     <img src="https://thesmartlocal.ph/wp-content/uploads/2022/11/All-aBoard-XP-BGC-Takenoko-scaled.jpg" alt="Photo 3">
     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUo3mzju8AAAVrLN_Y87G-kFavolt2y7i2zdPrc-z8QfKc1JC2YWE7hXsopzpnHXa_L8E97INJpTKFRrIDZjoXG2vuER1nCfWcCxkGI0aRw5CXHb4R0zJJLR5Fdk47vD4dEecytAF-c5WT/s1600/IMG_20180428_154414.jpg" alt="Photo 4">
