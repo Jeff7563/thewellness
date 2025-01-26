@@ -73,26 +73,26 @@ if (!isset($_SESSION['user_id'])) {
 </header>
 <!-- header section end -->
 <body>
-<h1 class="heading">กิจกรรมเต้นแอโรบิค</h1>
+<h1 class="heading">กิจกรรมเพ้นท์แก้วเซรามิค</h1>
 <div class="photo-grid">
-    <img src="https://www.nesdc.go.th/images/article/news6355/n20161230132311_16307.jpg"lt="Photo 1">
-    <img src="https://mpics.mgronline.com/pics/Images/559000012658007.JPEG" alt="Photo 2">
-    <img src="https://cdc.parliament.go.th/ewtadmin/ewt/parliament_parcy/images/article/images2022/news85144/n20220321203041_640402.jpg" alt="Photo 3">
-    <img src="https://cdc.parliament.go.th/ewtadmin/ewt/parliament_parcy/images/article/images2022/news85144/n20220321203050_640403.jpg" alt="Photo 4">
+    <img src="https://pbs.twimg.com/media/ECY3cHuUcAA8kpD?format=jpg&name=4096x4096"lt="Photo 1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRfadZUKUaOFz_PjEAm92S1BGo5lxgmu_DnjdBBMWE-W2GIxCqC6S8yTl1c3sNLIUVO9g&usqp=CAU" alt="Photo 2">
+    <img src="https://pbs.twimg.com/media/ECY3acYUwAAuOuk?format=jpg&name=4096x4096" alt="Photo 3">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1rbSdMy14NHJcKgmNLD0grjdmbndfebAnF2BSU2OGB8qOLJ81vXB2I2Rfg8IKLSumg9E&usqp=CAU" alt="Photo 4">
    
   </div>
    <div class="photo-grid">
-    <img src="https://cdc.parliament.go.th/ewtadmin/ewt/parliament_parcy/images/article/images2022/news85144/n20220321203114_640406.jpg" alt="Photo 7">
-    <img src="https://rph.co.th/wp-content/uploads/2023/10/03-1-1024x683.jpg" alt="Photo 8">
-    <img src="https://rph.co.th/wp-content/uploads/2023/10/05-1-1024x683.jpg" alt="Photo 9" >
-    <img src="https://rph.co.th/wp-content/uploads/2023/10/04-1-1024x683.jpg" alt="Photo 10">
+    <img src="https://www.matichonacademy.com/wp-content/uploads/2022/11/LINE_ALBUM_%E0%B9%80%E0%B8%9E%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%92%E0%B9%92%E0%B9%90%E0%B9%99%E0%B9%93%E0%B9%90_6.jpg" alt="Photo 7">
+    <img src="https://www.matichon.co.th/wp-content/uploads/2022/10/01-8-2-1024x576.jpg" alt="Photo 8">
+    <img src="https://pbs.twimg.com/media/ECGUk5hVUAAfNw2?format=jpg&name=large" alt="Photo 9" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnoA3OTAW4Te44aZWkvU2P2VBamAiLqsJMQ&s" alt="Photo 10">
     
   </div>
   <div class="photo-grid">
-    <img src="https://cdc.parliament.go.th/ewtadmin/ewt/parliament_parcy/images/article/images2022/news85144/n20220321203201_640412.jpg" alt="Photo 5">
-    <img src="https://cdc.parliament.go.th/ewtadmin/ewt/parliament_parcy/images/article/images2022/news85144/n20220321203017_640399.jpg" alt="Photo 6">
-    <img src="https://cdc.parliament.go.th/ewtadmin/ewt/parliament_parcy/images/article/images2022/news85144/n20220321203237_640417.jpg" alt="Photo 11">
-    <img src="https://cdc.parliament.go.th/ewtadmin/ewt/parliament_parcy/images/article/images2022/news85144/n20220321203129_640408.jpg" alt="Photo 12">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3krSJwzX31MJ96M_ypYZTS1nhPHVLAL9GZg&s" alt="Photo 5">
+    <img src="https://image.dek-d.com/27/0497/7323/119594479" alt="Photo 6">
+    <img src="https://image.dek-d.com/27/0497/7323/119594453" alt="Photo 11">
+    <img src="https://www.matichonacademy.com/wp-content/uploads/2022/11/LINE_ALBUM_%E0%B9%80%E0%B8%9E%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%92%E0%B9%92%E0%B9%90%E0%B9%99%E0%B9%93%E0%B9%90_25_0.jpg" alt="Photo 12">
   </div>
 </body>
 </html>
