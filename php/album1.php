@@ -78,7 +78,7 @@ if (!isset($_SESSION['user_id'])) {
   </div>
 
   <div class="photo-grid">
-    <img src="/images/6.png" alt="Photo 1">
+    <img src="https://th.bing.com/th/id/OIP.c047FeZcAwR3ptUeYSAynAHaE8?rs=1&pid=ImgDetMain alt="Photo 1">
     <img src="/images/บอร์ดเกม2.jpg" alt="Photo 2">
     <img src="/images/บอร์ดเกม3.jpg" alt="Photo 3">
     <img src="/images/บอร์ดเกม4.jpg" alt="Photo 4">
