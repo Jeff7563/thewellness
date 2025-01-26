@@ -82,15 +82,15 @@ if (!isset($_SESSION['user_id'])) {
    
   </div>
    <div class="photo-grid">
-    <img src="https://image.dek-d.com/27/0497/7323/119594481" alt="Photo 7">
-    <img src="https://image.dek-d.com/27/0497/7323/119594479" alt="Photo 8">
-    <img src="https://www.uplay.it/bggimages/14996/1146379.jpg" alt="Photo 9" >
+    <img src="https://pbs.twimg.com/media/ECGUnasU4AANfXX.jpg" alt="Photo 7">
+    <img src="https://pbs.twimg.com/media/ECTHd8aUYAAogM2.jpg" alt="Photo 8">
+    <img src="https://pbs.twimg.com/media/ECghDI-UIAAMu6s.jpg:large" alt="Photo 9" >
     <img src="https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/owAAelEIEBglJO9f5UFQ08Dpp4OKD9EzDCFtAi~tplv-tej9nj120t-origin.webp" alt="Photo 10">
     
   </div>
   <div class="photo-grid">
     <img src="https://www.matichonacademy.com/wp-content/uploads/2022/11/LINE_ALBUM_%E0%B9%80%E0%B8%9E%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%92%E0%B9%92%E0%B9%90%E0%B9%99%E0%B9%93%E0%B9%90_25_0.jpg" alt="Photo 5">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiejWXuWJOJY1o0vLngwpPgzsPkaKm0Oq4U1XVyuRS6HOaiYTBdM0F8Uck-qmOTIu_DUyFq5fspFreXlb9-gZKXaKuMpkqLlyeDh_T_7utHxOi8rkjdrFtt6cU4hdQmvY4wPimhxJ9P2WOp/s1600/IMG_20180607_113602.jpg" alt="Photo 6">
+    <img src="https://pbs.twimg.com/media/ECY3acYUwAAuOuk?format=jpg&name=4096x4096" alt="Photo 6">
     <img src="https://pbs.twimg.com/media/ECGUk5hVUAAfNw2?format=jpg&name=large" alt="Photo 11">
     <img src="https://www.matichonacademy.com/wp-content/uploads/2022/10/LINE_ALBUM_%E0%B9%80%E0%B8%9E%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_221014_7.jpg" alt="Photo 12">
   </div>
