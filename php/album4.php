@@ -32,6 +32,7 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,16 +44,16 @@ if (!isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="../css_use/styleactivity.css">
 </head>
 <body>
-  <header>
+<header>
     <input type="checkbox" name="" id="toggler">
     <label for="toggler" class="fas fa-bars"></label>
     <a href="#" class="Logo">wellness<span>.</span></a>
     <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">about</a>
-        <a href="#course">course</a>
-        <a href="#activity">activity</a>
-        <a href="#contact">contact</a>
+        <a href="./Index.php#home">Home</a>
+        <a href="./Index.php#about">about</a>
+        <a href="./Index.php#course">course</a>
+        <a href="./Index.php##activity">activity</a>
+        <a href="./Index.php#concet">contact</a>
     </nav>
     <div class="navbar">
             <div class="nav-right">
@@ -69,28 +70,29 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </div>
-  </header>
+</header>
 <!-- header section end -->
 <body>
-  <div >
-    <h1>กิจกรรมบอร์ดเกมรถไฟ</h1> 
-  </div>
-
+<h1 class="heading">กิจกรรมเต้นแอโรบิค</h1>
   <div class="photo-grid">
-    <img src="/images/บอร์ดเกม1.jpg" alt="Photo 1">
-    <img src="/images/บอร์ดเกม2.jpg" alt="Photo 2">
-    <img src="/images/บอร์ดเกม3.jpg" alt="Photo 3">
-    <img src="/images/บอร์ดเกม4.jpg" alt="Photo 4">
-    <img src="/images/บอร์ดเกม4.jpg" alt="Photo 5">
-    <img src="/images/บอร์ดเกม5.jpg" alt="Photo 6">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQjEvJ3jdPUrxzslTnsiBwNo6oN6KH_Fhc_w&s"lt="Photo 1">
+    <img src="https://www.matichonacademy.com/wp-content/uploads/2022/10/LINE_ALBUM_%E0%B9%80%E0%B8%9E%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_221014_8.jpg" alt="Photo 2">
+    <img src="https://thesmartlocal.ph/wp-content/uploads/2022/11/All-aBoard-XP-BGC-Takenoko-scaled.jpg" alt="Photo 3">
+    <img src="https://www.matichonacademy.com/wp-content/uploads/2022/11/LINE_ALBUM_%E0%B9%80%E0%B8%9E%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%92%E0%B9%92%E0%B9%90%E0%B9%99%E0%B9%93%E0%B9%90_15.jpg" alt="Photo 4">
+   
   </div>
    <div class="photo-grid">
-    <img src="/images/บอร์ดเกม6.jpg" alt="Photo 7">
-    <img src="/images/บอร์ดเกม7.jpg" alt="Photo 8">
-    <img src="/images/บอร์ดเกม8.jpg" alt="Photo 9">
-    <img src="/images/บอร์ดเกม9.jpg" alt="Photo 10">
-    <img src="/images/บอร์ดเกม10.jpeg" alt="Photo 11">
-    <img src="/images/บอร์ดเกม11.jpg" alt="Photo 12">
+    <img src="https://image.dek-d.com/27/0497/7323/119594481" alt="Photo 7">
+    <img src="https://image.dek-d.com/27/0497/7323/119594479" alt="Photo 8">
+    <img src="https://www.uplay.it/bggimages/14996/1146379.jpg" alt="Photo 9" >
+    <img src="https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/owAAelEIEBglJO9f5UFQ08Dpp4OKD9EzDCFtAi~tplv-tej9nj120t-origin.webp" alt="Photo 10">
+    
+  </div>
+  <div class="photo-grid">
+    <img src="https://www.matichonacademy.com/wp-content/uploads/2022/11/LINE_ALBUM_%E0%B9%80%E0%B8%9E%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%92%E0%B9%92%E0%B9%90%E0%B9%99%E0%B9%93%E0%B9%90_25_0.jpg" alt="Photo 5">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiejWXuWJOJY1o0vLngwpPgzsPkaKm0Oq4U1XVyuRS6HOaiYTBdM0F8Uck-qmOTIu_DUyFq5fspFreXlb9-gZKXaKuMpkqLlyeDh_T_7utHxOi8rkjdrFtt6cU4hdQmvY4wPimhxJ9P2WOp/s1600/IMG_20180607_113602.jpg" alt="Photo 6">
+    <img src="https://pbs.twimg.com/media/ECGUk5hVUAAfNw2?format=jpg&name=large" alt="Photo 11">
+    <img src="https://www.matichonacademy.com/wp-content/uploads/2022/10/LINE_ALBUM_%E0%B9%80%E0%B8%9E%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_221014_7.jpg" alt="Photo 12">
   </div>
 </body>
 </html>
