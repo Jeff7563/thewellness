@@ -73,8 +73,8 @@ if (!isset($_SESSION['user_id'])) {
 </header>
 <!-- header section end -->
 <body>
-<h1 class="heading">กิจกรรมเพ้นท์แก้วเซรามิค</h1>
-  <div class="photo-grid">
+<h1 class="heading">กิจกรรมเต้นแอโรบิค</h1>
+<div class="photo-grid">
     <img src="https://www.nesdc.go.th/images/article/news6355/n20161230132311_16307.jpg"lt="Photo 1">
     <img src="https://mpics.mgronline.com/pics/Images/559000012658007.JPEG" alt="Photo 2">
     <img src="https://cdc.parliament.go.th/ewtadmin/ewt/parliament_parcy/images/article/images2022/news85144/n20220321203041_640402.jpg" alt="Photo 3">
