@@ -79,10 +79,10 @@ if (!isset($_SESSION['user_id'])) {
 
   <div class="photo-grid">
     <img src="https://th.bing.com/th/id/OIP.c047FeZcAwR3ptUeYSAynAHaE8?rs=1&pid=ImgDetMain alt="Photo 1">
-    <img src="/images/บอร์ดเกม2.jpg" alt="Photo 2">
-    <img src="/images/บอร์ดเกม3.jpg" alt="Photo 3">
-    <img src="/images/บอร์ดเกม4.jpg" alt="Photo 4">
-    <img src="/images/บอร์ดเกม4.jpg" alt="Photo 5">
+    <img src="https://image.bangkokbiznews.com/uploads/images/md/2022/05/ObS7NpK4gBKO1dPFs1p7.webp" alt="Photo 2">
+    <img src="https://thesmartlocal.ph/wp-content/uploads/2022/11/All-aBoard-XP-BGC-Takenoko-scaled.jpg" alt="Photo 3">
+    <img src="" alt="Photo 4">
+    <img src="" alt="Photo 5">
     <img src="/images/บอร์ดเกม5.jpg" alt="Photo 6">
   </div>
    <div class="photo-grid">
