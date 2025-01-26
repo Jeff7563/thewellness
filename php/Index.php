@@ -152,7 +152,7 @@ $conn->close();
 <section class="activity" id="activity">
 <h1 class="heading">activity <span>us</span></h1>
 <div class="card">
-    <a href="album1.php" class="card">
+    <a href="album1.php" class="album">
       <img src="https://www.mephoomschool.com/wp-content/uploads/2020/08/iF6TSq.jpg" alt="Album 1">
       <h3>กิจกรรมบอร์ดเกมรถไฟ</h3>
     </a>
