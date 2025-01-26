@@ -90,8 +90,8 @@ if (!isset($_SESSION['user_id'])) {
   </div>
   <div class="photo-grid">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3krSJwzX31MJ96M_ypYZTS1nhPHVLAL9GZg&s" alt="Photo 5">
-    <img src="https://image.dek-d.com/27/0497/7323/119594479" alt="Photo 6">
-    <img src="https://image.dek-d.com/27/0497/7323/119594453" alt="Photo 11">
+    <img src="https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/owAAelEIEBglJO9f5UFQ08Dpp4OKD9EzDCFtAi~tplv-tej9nj120t-origin.webp" alt="Photo 6">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe9IDuJEXtuSTGUBDCWC26sxn2_rDvssCgZ--psEBSYCnqIFMq3jECN21lJxUvaInOCnM&usqp=CAU" alt="Photo 11">
     <img src="https://www.matichonacademy.com/wp-content/uploads/2022/11/LINE_ALBUM_%E0%B9%80%E0%B8%9E%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%92%E0%B9%92%E0%B9%90%E0%B9%99%E0%B9%93%E0%B9%90_25_0.jpg" alt="Photo 12">
   </div>
 </body>
