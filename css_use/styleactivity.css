@@ -9,7 +9,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
   }
-  h1 {
+  .heading{ 
     text-align: center;
     padding: 10rem;
     background-color: #66CC99;
