@@ -52,6 +52,7 @@ if (!isset($_SESSION['user_id'])) {
         <a href="./Index.php#home">Home</a>
         <a href="./Index.php#about">about</a>
         <a href="./Index.php#course">course</a>
+        <a href="./Index.php##activity">activity</a>
         <a href="./Index.php#concet">contact</a>
     </nav>
     <div class="navbar">
