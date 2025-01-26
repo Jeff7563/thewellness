@@ -91,5 +91,11 @@ if (!isset($_SESSION['user_id'])) {
     <img src="https://www.uplay.it/bggimages/14996/1220301.jpg" alt="Photo 10">
     
   </div>
+  <div class="photo-grid">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZhpmTzHFdmFQRxoCxePAOcgBb4pWTeTBQ5wlESSLzZPzIY_uDtWDd9NLV2x3XwglTBbV6QA7B5KPyg3ke64KkGcekEbmcpJU5nz9xi-HyPGxFhLSfq3TFqpu77PWGu8PbyWdEY1iwRah7/s1600/IMG_20180428_145634.jpg" alt="Photo 5">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiejWXuWJOJY1o0vLngwpPgzsPkaKm0Oq4U1XVyuRS6HOaiYTBdM0F8Uck-qmOTIu_DUyFq5fspFreXlb9-gZKXaKuMpkqLlyeDh_T_7utHxOi8rkjdrFtt6cU4hdQmvY4wPimhxJ9P2WOp/s1600/IMG_20180607_113602.jpg" alt="Photo 6">
+    <img src="https://www.uplay.it/bggimages/14996/1216204.jpg" alt="Photo 11">
+    <img src="https://www.uplay.it/bggimages/14996/1228301.jpg" alt="Photo 12">
+  </div>
 </body>
 </html>
