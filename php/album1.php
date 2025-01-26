@@ -44,16 +44,15 @@ if (!isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="../css_use/styleactivity.css">
 </head>
 <body>
-  <header>
+<header>
     <input type="checkbox" name="" id="toggler">
     <label for="toggler" class="fas fa-bars"></label>
     <a href="#" class="Logo">wellness<span>.</span></a>
     <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">about</a>
-        <a href="#course">course</a>
-        <a href="#activity">activity</a>
-        <a href="#contact">contact</a>
+        <a href="./Index.php#home">Home</a>
+        <a href="./Index.php#about">about</a>
+        <a href="./Index.php#course">course</a>
+        <a href="./Index.php#concet">contact</a>
     </nav>
     <div class="navbar">
             <div class="nav-right">
@@ -70,7 +69,7 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </div>
-  </header>
+</header>
 <!-- header section end -->
 <body>
 <h1 class="heading">กิจกรรมบอร์ดเกมรถไฟ</h1>
