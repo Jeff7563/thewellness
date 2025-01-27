@@ -390,7 +390,7 @@ header label.fa-bars{
 .album {
   text-align: center;
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   background: white;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -408,7 +408,7 @@ header label.fa-bars{
 .album h3 {
   padding: 10px;
   font-size: 18px;
-  background-color: #3CB371;
+  background-color: #4caf50;
 }
 
 .album:hover {
