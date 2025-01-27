@@ -395,7 +395,7 @@ header label.fa-bars{
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
-  width: 200px;
+  width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
