@@ -151,22 +151,22 @@ $conn->close();
 
 <section class="activity" id="activity">
 <h1 class="heading">activity <span>us</span></h1>
-<div class="card">
-    <a href="album1.php" class="album">
-      <img src="https://www.mephoomschool.com/wp-content/uploads/2020/08/iF6TSq.jpg" alt="Album 1">
-      <h3>กิจกรรมบอร์ดเกมรถไฟ</h3>
+<div class="albums">
+    <a href="album1.html" class="album">
+      <img src="album1.jpg" alt="Album 1">
+      <h3>กิจกรรม 1</h3>
     </a>
-    <a href="album2.php" class="album">
-      <img src="https://www.mephoomschool.com/wp-content/uploads/2020/08/iF6TSq.jpg" alt="Album 2">
-      <h3>กิจกรรมคลาสเรียนอูคูเลเล่</h3>
+    <a href="album2.html" class="album">
+      <img src="album2.jpg" alt="Album 2">
+      <h3>กิจกรรม 2</h3>
     </a>
-    <a href="album3.php" class="album">
-      <img src=https://www.mephoomschool.com/wp-content/uploads/2020/08/iF6TSq.jpg alt="Album 3">
-      <h3>กิจกรรมเพ้นท์แก้วเซรามิค</h3>
+    <a href="album3.html" class="album">
+      <img src="album3.jpg" alt="Album 3">
+      <h3>กิจกรรม 3</h3>
     </a>
-    <a href="album4.php" class="album">
-      <img src=https://www.mephoomschool.com/wp-content/uploads/2020/08/iF6TSq.jpg alt="Album 4">
-      <h3>เต้นแอโรบิค</h3>
+    <a href="album4.html" class="album">
+      <img src="album4.jpg" alt="Album 4">
+      <h3>กิจกรรม 4</h3>
     </a>
   </div>
   </section>
