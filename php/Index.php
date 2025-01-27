@@ -200,6 +200,7 @@ $conn->close();
     <a href="#home">Home</a>
     <a href="#about">about</a>
     <a href="#course">course</a>
+    <a href="#activity">activity</a>
     <a href="#contact">contact</a>
   </div>
 
