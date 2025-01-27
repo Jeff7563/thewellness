@@ -153,7 +153,7 @@ $conn->close();
 <h1 class="heading">activity <span>us</span></h1>
 <div class="albums">
     <a href="album1.html" class="album">
-      <img src="album1.jpg" alt="Album 1">
+      <img src="https://alternative-static.myshopblocks.com/images/2023/03/resize/1024x1024/6273f388b53f4cabf1f763a3c93acc19.jpg?t=1679270400" alt="Album 1">
       <h3>กิจกรรม 1</h3>
     </a>
     <a href="album2.html" class="album">
