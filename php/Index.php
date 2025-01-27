@@ -152,21 +152,21 @@ $conn->close();
 <section class="activity" id="activity">
 <h1 class="heading">activity <span>us</span></h1>
 <div class="albums">
-    <a href="album1.html" class="album">
-      <img src="https://alternative-static.myshopblocks.com/images/2023/03/resize/1024x1024/6273f388b53f4cabf1f763a3c93acc19.jpg?t=1679270400" alt="Album 1">
-      <h3>กิจกรรม 1</h3>
+    <a href="album1.php" class="album">
+      <img src="https://s3.amazonaws.com/mindgames.ca/wp-content/uploads/2021/09/Ticket-To-Ride-3.jpg" alt="Album 1">
+      <h3>กิจกรรมบอร์ดเกมรถไฟ</h3>
     </a>
-    <a href="album2.html" class="album">
-      <img src="album2.jpg" alt="Album 2">
-      <h3>กิจกรรม 2</h3>
+    <a href="album2.php" class="album">
+      <img src="https://i.ytimg.com/vi/9HLNXhq3mU8/maxresdefault.jpg" alt="Album 2">
+      <h3>กิจกรรมคลาสเรียนอูคูเลเล่</h3>
     </a>
-    <a href="album3.html" class="album">
-      <img src="album3.jpg" alt="Album 3">
-      <h3>กิจกรรม 3</h3>
+    <a href="album3.php" class="album">
+      <img src="https://media.timeout.com/images/105978501/750/562/image.jpg" alt="Album 3">
+      <h3>กิจกรรมเพ้นท์แก้วเซรามิค</h3>
     </a>
-    <a href="album4.html" class="album">
-      <img src="album4.jpg" alt="Album 4">
-      <h3>กิจกรรม 4</h3>
+    <a href="album4.php" class="album">
+      <img src="https://www.cmcity.go.th/data/content/2023/16419/cms/big/image_cms_bcfginqrsuw9.jpg" alt="Album 4">
+      <h3>กิจกรรมเต้นแอโรบิค</h3>
     </a>
   </div>
   </section>
