@@ -60,6 +60,7 @@ $conn->close();
         <a href="Index.php#home" id="home">Home</a>
         <a href="Index.php#about" id="about">about</a>
         <a href="Index.php#course" id="course">course</a>
+        <a href="Index.php#activity" id="activity">activity</a>
         <a href="Index.php#concet" id="concet">contact</a>
     </nav>
     <div class="navbar">
