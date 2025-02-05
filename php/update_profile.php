@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $userId = $_POST['id'];
+    $userId = $_POST['user_id'];
     $username = $_POST['username'];
     $email = $_POST['email'];
     $fullname = $_POST['fullname'];
@@ -25,11 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($password)) {
         $hashed_password = password_hash($password, PASSWORD_BCRYPT);
-        $sql = "UPDATE users SET username = ?, email = ?, fullname = ?, gender = ?, age = ?, phone = ?, activity = ?, password = ? WHERE id = ?";
+        $sql = "UPDATE users SET username = ?, email = ?, fullname = ?, gender = ?, age = ?, phone = ?, activity = ?, password = ? WHERE user_id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ssssisssi", $username, $email, $fullname, $gender, $age, $phone, $activity, $hashed_password, $userId);
     } else {
-        $sql = "UPDATE users SET username = ?, email = ?, fullname = ?, gender = ?, age = ?, phone = ?, activity = ? WHERE id = ?";
+        $sql = "UPDATE users SET username = ?, email = ?, fullname = ?, gender = ?, age = ?, phone = ?, activity = ? WHERE user_id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ssssissi", $username, $email, $fullname, $gender, $age, $phone, $activity, $userId);
     }
