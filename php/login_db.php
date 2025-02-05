@@ -8,7 +8,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
     
-        $sql = "SELECT id, password FROM users WHERE email = ? ";
+        $sql = "SELECT user_id, password FROM users WHERE email = ? ";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("s", $email);
         $stmt->execute();
