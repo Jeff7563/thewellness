@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $course_name = $_POST['course_name']; // ดึง course_name จากฟอร์ม
 
     // ตรวจสอบว่าผู้ใช้มีอยู่ในระบบ
-    $sql_user_check = "SELECT id FROM users WHERE id = ?";
+    $sql_user_check = "SELECT user_id FROM users WHERE user_id = ?";
     $stmt_user_check = $conn->prepare($sql_user_check);
     $stmt_user_check->bind_param("i", $user_id);
     $stmt_user_check->execute();
