@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 
 // Assuming you want to get the username of a specific user, e.g., with id 1
 $userId = $_SESSION['user_id'];
-$sql = "SELECT username FROM users WHERE id = ?";
+$sql = "SELECT username FROM users WHERE user_id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $userId);
 $stmt->execute();
